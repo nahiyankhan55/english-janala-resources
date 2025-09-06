@@ -5,6 +5,74 @@
   font-family: "Hind Siliguri", sans-serif;
 }
 .active {
-  background-color: #422ad5;
-  color: white;
+  background-color: #40b4ff;
+  color: rgb(255, 255, 255);
+}
+
+/* Font setup */
+body {
+  font-family: "Poppins", sans-serif;
+}
+.font-bangla {
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+/* =======================
+   📱 Mobile (max 640px)
+==========================*/
+@media (max-width: 640px) {
+  header .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem; /* ছোট হেডিং */
+  }
+
+  #word-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .image img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* =======================
+   📲 Tablet (641px – 1024px)
+==========================*/
+@media (min-width: 641px) and (max-width: 1024px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  #word-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content {
+    text-align: center;
+  }
+}
+
+/* =======================
+   💻 Desktop (1025px+)
+==========================*/
+@media (min-width: 1025px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  #word-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .content {
+    padding-right: 2rem;
+  }
 }
